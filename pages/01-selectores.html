@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de jQuery - Selectores</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+
+  <ul class="nav nav-pills">
+    <li role="presentation"><a href="../index.html">Inicio</a></li>
+    <li role="presentation" class="active"><a href="01-selectores.html">Selectores</a></li>
+    <li role="presentation"><a href="02-forms.html">Formularios</a></li>
+  </ul>
+
+  <h1>Taller de jQuery - Selectores</h1>
+  <hr>
+
+
+  <div class="alert alert-danger">
+    <h2>Texto informativo</h2>
+    <p>Este es un mensaje informativo y debe mostrarse como una alerta de información
+      <strong>"alert-info"</strong>.
+    </p>
+  </div>
+
+  <button id="showAlert" class="btn btn-primary">Mostrar/Ocultar</button>
+
+
+
+  <ul class="list-group">
+    <li class="list-group-item liClass" id="itemNum1">First item</li>
+    <li class="list-group-item liClass" id="itemNum2">Second item</li>
+    <li class="list-group-item liClass" id="itemNum3">Third item</li>
+    <li class="list-group-item">Fourth item</li>
+    <li class="list-group-item">Fifth item</li>
+    <li class="list-group-item">Sixth item</li>
+  </ul>
+
+  <div class="row">
+    <div class="form-group col-md-6">
+      <input class="form-control" type="text" id="textOption" placeholder="Introduce el texto">
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-default btn-list" id="inicio">Inicio</button>
+      <button class="btn btn-default btn-list" id="final">Final</button>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-default btn-next-to" id="antes">Antes</button>
+      <button class="btn btn-default btn-next-to" id="despues">Después</button>
+    </div>
+  </div>
+
+
+
+  <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+  <div class="modal fade" id="modal-id">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body" style="height: 100px;">
+          <h1>Hola mundo</h1>
+          <h1>Hola mundo</h1>
+          <h1>Hola mundo</h1>
+          <h1>Hola mundo</h1>
+          <h1>Hola mundo</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="btn-save">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../js/01-selectores.js"></script>
+</body>
+
+</html>
